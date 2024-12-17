@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flag {
+    margin-left: 10px;
+    width: 25px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-me-section {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    max-width: 700px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.skills-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+@media (max-width: 768px) {
+    .skills-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+.skill-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background: hsl(0, 0%, 95%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.skill-icons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-icon {
+    position: relative;
+}
+
+.skill-icon img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-icon img:hover {
+    transform: scale(1.1);
+}
+
+.hovered-skill {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 6px 10px;
+    white-space: nowrap;
+    display: none;
+}
+
+.skill-icon:hover .hovered-skill {
+    display: block;
+}
+
+.skills-header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
