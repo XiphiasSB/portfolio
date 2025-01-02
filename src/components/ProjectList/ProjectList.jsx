@@ -2,6 +2,7 @@ import "./ProjectList.css"
 import { Project } from "../ProjectComponent/Project"
 import GitHubIcon from "../../assets/Logos/Socials/github-svgrepo-com.svg"
 import SteamIcon from "../../assets/Logos/Software/8547091_steam_icon.svg"
+import YoutubeIcon from "../../assets/Logos/Youtube.png"
 import KanbanImage from "/kanban.jpg"
 import AL from "/AL.jpg"
 import ImmortalImage from "/Immortal.jpg"
@@ -26,7 +27,7 @@ export function ProjectList() {
         {
           title: "Algebra Learner",
           websiteLink: "https://algebralearner.com/",
-          platformLink: "https://github.com/XiphiasSB/todo-list",
+          platformLink: "https://www.youtube.com/watch?v=OnIw7GIxvys",
           image: AL,
           descriptions: [
             "Made by me with help from others part-time over a 2 year period",
@@ -37,6 +38,7 @@ export function ProjectList() {
             "About 90 scripts and 10,000 lines of code",
             "GitHub is private, but feel free to request access when contacting me."
           ],
+          icon: YoutubeIcon
         },
         {
           title: "Immortal: Gates of Pyre",

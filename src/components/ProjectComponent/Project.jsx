@@ -6,14 +6,14 @@ export function Project({ title, image, websiteLink, platformLink, descriptions,
 
       <div className="project-content">
         <h3 className="project-title">{title}</h3>
-        <a
-          href={websiteLink}
-          className="project-link"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {websiteLink}
-        </a>
+          <a
+            href={websiteLink}
+            className="project-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {websiteLink}
+          </a>
         <ul className="project-descriptions">
           {descriptions.map((desc, index) => (
             <li key={index}>{desc}</li>
