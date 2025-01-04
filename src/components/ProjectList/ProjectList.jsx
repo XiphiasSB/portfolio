@@ -8,26 +8,28 @@ import AL from "/AL.jpg"
 import ImmortalImage from "/Immortal.jpg"
 import MovieImage from "/MyMovieRanking.jpg"
 import RubikCube from "/Rubik.jpg"
+import ONTRACC from "/ONTRACC.png"
 
 export function ProjectList() {
     const projects = [
-        {
-          title: "Princess Kanban",
-          websiteLink: "https://princess-kanban.web.app/",
-          platformLink: "https://github.com/XiphiasSB/todo-list",
-          image: KanbanImage,
-          descriptions: [
-            "Made by me as a test project in React",
-            "A fun task-managing tool for your royal duties!", 
-            "Added touch compatibility for mobile users", 
-            "Functionality for local storage so your tasks are remembered each time you open the website"
-          ],
-          icon: GitHubIcon,
-        },
+      {
+        title: "ONTRACC",
+        websiteLink: "https://apps.apple.com/us/app/ontracc/id6499507546",
+        platformLink: "https://github.com/XiphiasSB/todo-list",
+        image: ONTRACC,
+        descriptions: [
+          "Tracks daily habits and goals while monitoring progress over time.",
+          "Developed with React and Next.js, integrated with Capacitor for native functionality, and written in TypeScript.",
+          "Utilizes Firebase for backend services and Twilio for email communication.",
+          "Includes log-in functionality, progress tracking, and a leaderboard for friendly competition.",
+          "Push notifications keep users on track with their habits and goals",
+          "Includes a leaderboard where users can compete with peers, fostering motivation and accountability",
+        ],
+      },  
         {
           title: "Algebra Learner",
           websiteLink: "https://algebralearner.com/",
-          platformLink: "https://www.youtube.com/watch?v=OnIw7GIxvys",
+          platformLink: "https://youtu.be/3ask4qOpH0Y",
           image: AL,
           descriptions: [
             "Made by me with help from others part-time over a 2 year period",
@@ -53,6 +55,19 @@ export function ProjectList() {
             "Game is still in development",
           ],
           icon: SteamIcon,
+        },
+        {
+          title: "Princess Kanban",
+          websiteLink: "https://princess-kanban.web.app/",
+          platformLink: "https://github.com/XiphiasSB/todo-list",
+          image: KanbanImage,
+          descriptions: [
+            "Made by me as a test project in React",
+            "A fun task-managing tool for your royal duties!", 
+            "Added touch compatibility for mobile users", 
+            "Functionality for local storage so your tasks are remembered each time you open the website"
+          ],
+          icon: GitHubIcon,
         },
         {
           title: "My Movie Rankings",

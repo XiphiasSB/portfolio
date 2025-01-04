@@ -12,6 +12,7 @@ import DatabaseLogo from "../../assets/Logos/Programming/database-svgrepo-com.sv
 import JiraLogo from "../../assets/Logos/Software/jira-svgrepo-com.svg";
 import ExcelLogo from "../../assets/Logos/Software/excel-file-svgrepo-com.svg";
 import ClickUpLogo from "../../assets/Logos/Software/clickup-svgrepo-com.svg";
+import TypeScriptLogo from "../../assets/Logos/Programming/Typescript_logo_2020.svg";
 import flag from "../../assets/flag.svg";
 
 export function Body() {
@@ -38,6 +39,10 @@ export function Body() {
                         <div className="skill-icon">
                             <img src={ReactLogo} alt="React" />
                             <div className="hovered-skill">React</div>
+                        </div>
+                        <div className="skill-icon">
+                            <img src={TypeScriptLogo} alt="TypeScript" />
+                            <div className="hovered-skill">TypeScript</div>
                         </div>
                         <div className="skill-icon">
                             <img src={JSLogo} alt="JavaScript" />
