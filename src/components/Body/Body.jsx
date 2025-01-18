@@ -24,14 +24,14 @@ export function Body() {
             
             <h2 className="skills-header">My Experience</h2>
             <div className="skills-section">
-                {Object.entries(logos).map(([category, items]) => (
-                    <div className="skill-category" key={category}>
-                        <h2>{category}</h2>
+                {logos.map((obj) => (
+                    <div className="skill-category" key={obj.category}>
+                        <h2>{obj.category}</h2>
                         <div className="skill-icons">
-                            {items.map((logo, index) => (
+                            {obj.items.map((item, index) => (
                                 <div className="skill-icon" key={index}>
-                                    <img src={logo.img} alt={logo.alt} />
-                                    <div className="hovered-skill">{logo.name}</div>
+                                    <img src={item.img} alt={item.alt} />
+                                    <div className="hovered-skill">{item.name}</div>
                                 </div>
                             ))}
                         </div>

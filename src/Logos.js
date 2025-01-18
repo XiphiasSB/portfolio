@@ -12,78 +12,41 @@ import JiraLogo from "./assets/Logos/Software/jira-svgrepo-com.svg";
 import ClickUpLogo from "./assets/Logos/Software/clickup-svgrepo-com.svg";
 import ExcelLogo from "./assets/Logos/Software/excel-file-svgrepo-com.svg";
 
-const logos = {
-  Frontend: [
-    {
-    img: NextJSLogo,
-    alt: "NextJS Logo",
-    name: "NextJS"
-  },
-    {
-    img: TailwindLogo,
-    alt: "Tailwind CSS Logo",
-    name: "Tailwind CSS"
-  },
-    {
-    img: ReactLogo,
-    alt: "React Logo",
-    name: "React"
+const logos = [
+  {
+    category: "Frontend",
+    items: [
+      { img: NextJSLogo, alt: "NextJS Logo", name: "NextJS" },
+      { img: TailwindLogo, alt: "Tailwind CSS Logo", name: "Tailwind CSS" },
+      { img: ReactLogo, alt: "React Logo", name: "React" },
+      { img: JavaScriptLogo, alt: "JavaScript Logo", name: "JavaScript" },
+      { img: CSSLogo, alt: "CSS Logo", name: "CSS" },
+      { img: HTMLLogo, alt: "HTML Logo", name: "HTML" },
+    ],
   },
   {
-    img: JavaScriptLogo,
-    alt: "JavaScript Logo",
-    name: "JavaScript"
+    category: "Game Developer",
+    items: [
+      { img: UnrealEngineLogo, alt: "Unreal Engine Logo", name: "Unreal Engine" },
+      { img: GodotLogo, alt: "Godot Logo", name: "Godot" },
+    ],
   },
   {
-    img: CSSLogo,
-    alt: "CSS Logo",
-    name: "CSS"
+    category: "Software",
+    items: [
+      { img: PythonLogo, alt: "Python Logo", name: "Python" },
+      { img: DatabaseLogo, alt: "Database Logo", name: "Database" },
+    ],
   },
   {
-    img: HTMLLogo,
-    alt: "HTML Logo",
-    name: "HTML"
+    category: "Manager",
+    items: [
+      { img: JiraLogo, alt: "Jira Logo", name: "Jira" },
+      { img: ClickUpLogo, alt: "ClickUp Logo", name: "ClickUp" },
+      { img: ExcelLogo, alt: "Excel Logo", name: "Excel" },
+    ],
   },
-],
-"Game Developer": [{
-    img: UnrealEngineLogo,
-    alt: "Unreal Engine Logo",
-    name: "Unreal Engine"
-  },
-  {
-    img: GodotLogo,
-    alt: "Godot Logo",
-    name: "Godot"
-  },
-],
-Software: [{  
-    img: PythonLogo,
-    alt: "Python Logo",
-    name: "Python"
-  },
-  {
-    img: DatabaseLogo,
-    alt: "Database Logo",
-    name: "Database"
-  },
-],
-Manager: [
-  {
-    img: JiraLogo,
-    alt: "Jira Logo",
-    name: "Jira"
-  },
-  {
-    img: ClickUpLogo,
-    alt: "ClickUp Logo",
-    name: "ClickUp"
-  },
-  {
-  img: ExcelLogo,
-  alt: "Excel Logo",
-  name: "Excel"
-}
-],
-}
+];
+
 
 export default logos;
