@@ -12,20 +12,6 @@ import ONTRACC from "/ONTRACC.png"
 
 export function ProjectList() {
     const projects = [
-      {
-        title: "ONTRACC",
-        websiteLink: "https://apps.apple.com/us/app/ontracc/id6499507546",
-        platformLink: "https://github.com/XiphiasSB/todo-list",
-        image: ONTRACC,
-        descriptions: [
-          "Tracks daily habits and goals while monitoring progress over time.",
-          "Developed with React and Next.js, integrated with Capacitor for native functionality, and written in TypeScript.",
-          "Utilizes Firebase for backend services and Twilio for email communication.",
-          "Includes log-in functionality, progress tracking, and a leaderboard for friendly competition.",
-          "Push notifications keep users on track with their habits and goals",
-          "Includes a leaderboard where users can compete with peers, fostering motivation and accountability",
-        ],
-      },  
         {
           title: "Algebra Learner",
           websiteLink: "https://algebralearner.com/",
@@ -42,6 +28,20 @@ export function ProjectList() {
           ],
           icon: YoutubeIcon
         },
+        {
+          title: "ONTRACC",
+          websiteLink: "https://apps.apple.com/us/app/ontracc/id6499507546",
+          platformLink: "https://github.com/XiphiasSB/todo-list",
+          image: ONTRACC,
+          descriptions: [
+            "Tracks daily habits and goals while monitoring progress over time.",
+            "Developed with React and Next.js, integrated with Capacitor for native functionality, and written in TypeScript.",
+            "Utilizes Firebase for backend services and Twilio for email communication.",
+            "Includes log-in functionality, progress tracking, and a leaderboard for friendly competition.",
+            "Push notifications keep users on track with their habits and goals",
+            "Includes a leaderboard where users can compete with peers, fostering motivation and accountability",
+          ],
+        },  
         {
           title: "Immortal: Gates of Pyre",
           websiteLink: "https://sunspeargames.com/",

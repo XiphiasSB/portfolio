@@ -54,7 +54,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -114,6 +115,7 @@
     padding: 6px 10px;
     white-space: nowrap;
     display: none;
+    z-index: 20;
 }
 
 .skill-icon:hover .hovered-skill {
