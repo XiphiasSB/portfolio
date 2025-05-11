@@ -19,6 +19,21 @@ export function ProjectList() {
   const categories = ["Project Management", "Programming", "Game Design"]
 
   const projects = [
+        {
+      title: "Immortal: Gates of Pyre",
+      websiteLink: "https://sunspeargames.com/",
+      platformLink: "https://store.steampowered.com/app/2921580/IMMORTAL_Gates_of_Pyre/",
+      category: ["Game Design", "Project Management"],
+      image: ImmortalImage,
+      descriptions: [
+        "Next-gen RTS game, built in Unreal Engine 5",
+        "I worked as Player vs Player (PvP) Design Lead on this project",
+        "Used Blueprint and some C++ for code implementation (Frontend)",
+        "Coordinated between Design, Tech, Art and Narrative",
+        "Game is still in development",
+      ],
+      icon: SteamIcon,
+    },
     {
       title: "Algebra Learner",
       websiteLink: "https://algebralearner.com/",
@@ -63,21 +78,6 @@ export function ProjectList() {
         "Push notifications keep users on track with their habits and goals",
         "Includes a leaderboard where users can compete with peers, fostering motivation and accountability",
       ],
-    },
-    {
-      title: "Immortal: Gates of Pyre",
-      websiteLink: "https://sunspeargames.com/",
-      platformLink: "https://store.steampowered.com/app/2921580/IMMORTAL_Gates_of_Pyre/",
-      category: ["Game Design", "Project Management"],
-      image: ImmortalImage,
-      descriptions: [
-        "Next-gen RTS game, built in Unreal Engine 5",
-        "I worked as Player vs Player (PvP) Design Lead on this project",
-        "Used Blueprint and some C++ for code implementation (Frontend)",
-        "Coordinated between Design, Tech, Art and Narrative",
-        "Game is still in development",
-      ],
-      icon: SteamIcon,
     },
     {
       title: "House of Math",
