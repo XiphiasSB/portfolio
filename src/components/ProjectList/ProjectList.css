@@ -1,20 +1,45 @@
+.category-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-tab {
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  font-size: 1.2rem;
+}
+
+.category-tab:hover {
+  transform: scale(1.05);
+}
+
+.category-tab.active {
+  background-color: #b7caca;
+  font-weight: bold;
+}
+
+.project-content-wrapper {
+  width: 100%;
+  max-width: 900px;
+}
+
 .project-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .project-list-title {
+   text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    text-align: center;
-}
-
-.projects-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 900px;
 }

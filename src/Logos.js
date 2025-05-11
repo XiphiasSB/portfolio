@@ -11,6 +11,7 @@ import DatabaseLogo from "./assets/Logos/Programming/database-svgrepo-com.svg";
 import JiraLogo from "./assets/Logos/Software/jira-svgrepo-com.svg";
 import ClickUpLogo from "./assets/Logos/Software/clickup-svgrepo-com.svg";
 import ExcelLogo from "./assets/Logos/Software/excel-file-svgrepo-com.svg";
+import CodecksLogo from "./assets/Logos/Software/codecks-icon-256.svg";
 
 const logos = [
   {
@@ -44,6 +45,7 @@ const logos = [
       { img: JiraLogo, alt: "Jira Logo", name: "Jira" },
       { img: ClickUpLogo, alt: "ClickUp Logo", name: "ClickUp" },
       { img: ExcelLogo, alt: "Excel Logo", name: "Excel" },
+      { img: CodecksLogo, alt: "Codecks Logo", name: "Codecks" },
     ],
   },
 ];
