@@ -14,9 +14,6 @@ import hom from "/hom.png"
 import UtahHomeUpgrades from "/UtahHomeUpgrades.png"
 
 export function ProjectList() {
-  const [selectedCategory, setSelectedCategory] = useState("Project Management")
-
-  const categories = ["Project Management", "Programming", "Game Design"]
 
   const projects = [
         {
@@ -135,6 +132,15 @@ export function ProjectList() {
     },
   ]
 
+  const [selectedCategory, setSelectedCategory] = useState("Project Management")
+
+  const rawCategories = ["Project Management", "Programming", "Game Design"]
+
+  const categoryCounts = rawCategories.map(category => {
+    const count = projects.filter(project => project.category?.includes(category)).length
+    return { name: category, count }
+  })
+
   const filteredProjects = projects.filter(project =>
     project.category?.includes(selectedCategory)
   )
@@ -144,13 +150,13 @@ export function ProjectList() {
      <h2 className="project-list-title">My Projects</h2>
       <div className="projects-container">
         <div className="category-tabs">
-          {categories.map(category => (
+          {categoryCounts.map(({ name, count }) => (
             <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={`category-tab ${selectedCategory === category ? "active" : ""}`}
+              key={name}
+              onClick={() => setSelectedCategory(name)}
+              className={`category-tab ${selectedCategory === name ? "active" : ""}`}
             >
-              {category}
+              {name} ({count})
             </button>
           ))}
         </div>

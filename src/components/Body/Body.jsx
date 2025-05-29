@@ -16,12 +16,13 @@ export function Body() {
                 </h1>
             </div>
 
-            <div className="about-me-section">
-                <p>
-                    I cobine hands-on programming experience with a solid foundation in project management and game design. 
-                    With emphasis on bringing clarity of structure, compelling user experiences, and cross-team collaboration, my objective is to meaningfully contribute to both creative and technical projects.
-                </p>
-            </div>
+         <div className="about-me-section">
+            <p>
+                I dive into new challenges headfirst and build structure along the way.
+                <br />
+                Whether it's design, development, or coordination, I get up to speed quickly and make things happen — especially in high-paced teams.
+            </p>
+        </div>
             
             <h2 className="skills-header">My Experience</h2>
                 <div className="skills-section">
